@@ -12,9 +12,11 @@ position = Vector2( 16, 16 )
 [node name="Body" type="Sprite" parent="."]
 
 [node name="HandLeft" type="Sprite" parent="."]
+position = Vector2( -4, 2 )
 texture = ExtResource( 1 )
 
 [node name="HandRight" type="Sprite" parent="."]
+position = Vector2( 4, 2 )
 texture = ExtResource( 2 )
 
 [node name="LegLeft" type="Sprite" parent="."]
