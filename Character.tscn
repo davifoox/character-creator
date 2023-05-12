@@ -215,6 +215,7 @@ texture = ExtResource( 2 )
 
 [node name="LeftLeg" type="Sprite" parent="Sprites"]
 position = Vector2( 2.5, 8.5 )
+scale = Vector2( 1, 1 )
 texture = ExtResource( 7 )
 
 [node name="RightLeg" type="Sprite" parent="Sprites"]
