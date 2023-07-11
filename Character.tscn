@@ -342,10 +342,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.125 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ Vector2( 1, -4 ) ]
+"values": [ Vector2( 1, -5 ), Vector2( 1, -4 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Sprites/Hair:position")
@@ -354,10 +354,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.125 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ Vector2( 1, -4 ) ]
+"values": [ Vector2( 1, -5 ), Vector2( 1, -4 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Sprites/LeftHand:position")
@@ -369,7 +369,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.125, 0.25, 0.375 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( 4, 4 ), Vector2( 3, 6 ), Vector2( 1, 6 ), Vector2( -2, 6 ) ]
+"values": [ Vector2( 4, 3 ), Vector2( 3, 5 ), Vector2( 1, 6 ), Vector2( -2, 6 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Sprites/Body:position")
@@ -378,10 +378,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.125 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ Vector2( 0.5, 4 ) ]
+"values": [ Vector2( 0.5, 3 ), Vector2( 0.5, 4 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Sprites/RightHand:position")
@@ -393,7 +393,7 @@ tracks/4/keys = {
 "times": PoolRealArray( 0, 0.125, 0.25, 0.375 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( -3, 5 ), Vector2( -1, 6 ), Vector2( 0, 7 ), Vector2( 4, 5 ) ]
+"values": [ Vector2( -3, 4 ), Vector2( -1, 6 ), Vector2( 0, 7 ), Vector2( 4, 5 ) ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Sprites/LeftLeg:position")
@@ -405,7 +405,7 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 0.125, 0.375 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( 2, 8.5 ), Vector2( 1, 8.5 ), Vector2( 1, 8.5 ) ]
+"values": [ Vector2( 2, 7.5 ), Vector2( 1, 8.5 ), Vector2( 1, 8.5 ) ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Sprites/RightLeg:position")
@@ -417,7 +417,7 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 0.125, 0.375 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( -2, 8 ), Vector2( 1, 8.5 ), Vector2( -1, 8.5 ) ]
+"values": [ Vector2( -2, 7 ), Vector2( 1, 8.5 ), Vector2( -1, 8.5 ) ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("Sprites/RightLeg:flip_v")
@@ -552,4 +552,4 @@ modulate = Color( 1, 1, 1, 0.588235 )
 position = Vector2( 24, 0 )
 texture = ExtResource( 3 )
 hframes = 36
-frame = 4
+frame = 5
