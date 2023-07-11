@@ -7,3 +7,5 @@ func _process(delta):
 		animation_player.play("Idle")
 	elif Input.is_action_just_pressed("2"):
 		animation_player.play("Run")
+	elif Input.is_action_just_pressed("3"):
+		animation_player.play("Jump")
