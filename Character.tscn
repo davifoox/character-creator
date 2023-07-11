@@ -22,10 +22,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.125, 0.375 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.125, 0.375, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( 1, -4 ), Vector2( 1, -3 ), Vector2( 1, -4 ) ]
+"values": [ Vector2( 1, -3 ), Vector2( 1, -2 ), Vector2( 1, -3 ), Vector2( 1, -3 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Sprites/LeftHand:position")
@@ -94,10 +94,10 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 0.125, 0.25, 0.375 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.125, 0.25, 0.375, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( 1, -4 ), Vector2( 1, -3 ), Vector2( 1, -2 ), Vector2( 1, -3 ) ]
+"values": [ Vector2( 1, -3 ), Vector2( 1, -2 ), Vector2( 1, -1 ), Vector2( 1, -2 ), Vector2( 1, -2 ) ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("Sprites/LeftLeg:scale")
@@ -366,6 +366,18 @@ tracks/14/keys = {
 "update": 0,
 "values": [ false ]
 }
+tracks/15/type = "value"
+tracks/15/path = NodePath("Sprites/Body:scale")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 0.833333 ) ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "Run"
@@ -378,10 +390,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.125, 0.5, 0.625 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( 1, -5 ), Vector2( 1, -4 ), Vector2( 1, -5 ), Vector2( 1, -4 ) ]
+"values": [ Vector2( 1, -4 ), Vector2( 1, -3 ), Vector2( 1, -3 ), Vector2( 1, -3 ), Vector2( 1, -4 ), Vector2( 1, -3 ), Vector2( 1, -3 ), Vector2( 1, -3 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Sprites/Hair:position")
@@ -390,10 +402,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.125, 0.5, 0.625 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( 1, -5 ), Vector2( 1, -4 ), Vector2( 1, -5 ), Vector2( 1, -4 ) ]
+"values": [ Vector2( 1, -4 ), Vector2( 1, -3 ), Vector2( 1, -3 ), Vector2( 1, -3 ), Vector2( 1, -4 ), Vector2( 1, -3 ), Vector2( 1, -3 ), Vector2( 1, -3 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Sprites/LeftHand:position")
@@ -417,7 +429,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 0.125, 0.5, 0.625 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Vector2( 0.5, 3 ), Vector2( 0.5, 4 ), Vector2( 1, 3 ), Vector2( 1, 4 ) ]
+"values": [ Vector2( 0.5, 3.5 ), Vector2( 0.5, 4 ), Vector2( 1, 3 ), Vector2( 1, 4 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Sprites/RightHand:position")
@@ -539,6 +551,18 @@ tracks/13/keys = {
 "update": 0,
 "values": [ 0.0, 0.0, 0.0, 0.0 ]
 }
+tracks/14/type = "value"
+tracks/14/path = NodePath("Sprites/Body:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 0.833333 ) ]
+}
 
 [node name="Character" type="Node2D"]
 position = Vector2( 16, 16 )
@@ -570,6 +594,7 @@ texture = ExtResource( 1 )
 
 [node name="Body" type="Sprite" parent="Sprites"]
 position = Vector2( 0.5, 4 )
+scale = Vector2( 1, 0.833333 )
 texture = ExtResource( 6 )
 
 [node name="RightHand" type="Sprite" parent="Sprites"]
@@ -587,4 +612,4 @@ modulate = Color( 1, 1, 1, 0.588235 )
 position = Vector2( 24, 0 )
 texture = ExtResource( 3 )
 hframes = 36
-frame = 11
+frame = 4
